@@ -1,9 +1,12 @@
 {
   "name": "dashboard",
+  "homepage": "https://shaimaayosef.github.io/0x01-react_intro",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "build": "webpack --mode production --config config/webpack.config.js",
     "start-dev": "webpack-dev-server --open --mode development --config config/webpack.config.js",
     "test": "jest"
