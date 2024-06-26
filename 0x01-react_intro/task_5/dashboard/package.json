@@ -4,13 +4,15 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  
   "scripts": {
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
-    "build": "webpack --mode production --config config/webpack.config.js",
-    "start-dev": "webpack-dev-server --open --mode development --config config/webpack.config.js",
-    "test": "jest"
-  },
+  "start": "react-scripts start",
+  "build": "react-scripts build",
+  "test": "react-scripts test",
+  "eject": "react-scripts eject",
+  "predeploy": "npm run build",
+  "deploy": "gh-pages -d build"
+},
   "keywords": [],
   "author": "",
   "license": "ISC",
